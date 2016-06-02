@@ -2,48 +2,46 @@
 <html lang="zh-cn" ng-app="app">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>LM的博客</title>
 </head>
-<body ng-controller="mainCtrl" style="scroll:no;">
-	<nav class="navbar navbar-default navbar-fixed-top blogNav" role="navigation">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">ARWEIL'S BLOG</a>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 personMenu">
+				<div class="person">
+					<img src="/public/img/tx.jpg" class="img-circle">
+					<h2>PRDRIGO ANGELIM</h1>
+					<h3>UI/UX Designer</h2>
+					<h4>Valencia, Spain</h4>
+				</div>
+				<div class="navlist">
+					<ul class="list-group">
+					   <li class="list-group-item active"><i class="glyphicon glyphicon-heart"></i> About Me</li>
+					   <li class="list-group-item"><i class="glyphicon glyphicon-heart"></i> Education</li>
+					   <li class="list-group-item"><i class="glyphicon glyphicon-heart"></i> Work Expericence</li>
+					   <li class="list-group-item"><i class="glyphicon glyphicon-heart"></i> Skills</li>
+					</ul>
+				</div>
+				<div class="contactMe">
+					<h4>Interested in working with me?</h4>
+					<p>Awesome!I'm available for full-time or freelance opportunitie.</p>
+					<p>Get in touch:</p>
+					<ul>
+						<li>1957185669@qq.com</li>
+						<li>XXX.com</li>
+					</ul>
+				</div>
 			</div>
-	
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li ng-repeat="nav in data_main.navList">
-						<a ui-sref='{{ nav.url }}'>{{ nav.name }}</a>
-					</li>
-				</ul>
-				<!-- <ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Link</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</li>
-				</ul> -->
-			</div><!-- /.navbar-collapse -->
+			<div class="col-md-8 content">
+				<h1>Education</h1>
+				<h2>Google University <small>2007 to always</small></h2>
+				<p>This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.</p>
+				<h1>Work Experience</h1>
+				<h2>Pickevent.com <small>2013 to present</small></h2>
+				<p>This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.</p>
+			</div>
 		</div>
-	</nav>
-	<ui-view class="hasHead"></ui-view>
-	<div class="bg">
 	</div>
-	<gototop class="top">TOP</gototop>
 
 	<script type="text/javascript" src="public/vendor.js"></script>
 	<script type="text/javascript" src="public/ng.bundle.js"></script>

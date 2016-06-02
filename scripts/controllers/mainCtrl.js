@@ -2,13 +2,11 @@ var mainCtrl = angular.module('Arweil.mainCtrl', []);
 
 mainCtrl.controller('mainCtrl', ['$scope', 
 	function ($scope) {
-		console.log('mainCtrl');
-
 		$scope.data_main = {
 			navList: [
-				{ 'name': 'Home', 'url': 'home' },
-				{ 'name': 'Work', 'url': 'work' },
-				{ 'name': 'Life', 'url': 'life' }
+				{ 'name': '主页', 'url': 'home' },
+				{ 'name': '工作', 'url': 'work' },
+				{ 'name': '生活', 'url': 'life' }
 			]
 		}
 }])
