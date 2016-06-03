@@ -2,10 +2,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './public/css/app.less';
 
+import './public/css/timeliner.less';
+
 //use require() has a error for ng
 import routers from './routers.js';
+import './scripts/directive/timeLine.js';
 
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router', 'timeline']);
 
 app.directive('navList', function () {
 	return {

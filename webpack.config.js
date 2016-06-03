@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
 	entry: {
 		app: './app.js',
-		jqPlugins: ['bootstrap'],
+		jqPlugins: ['bootstrap', './public/js/timeliner.js'],
 		ng: ['angular', 'angular-ui-router', 'ng-infinite-scroll']
 	},
 	output: {

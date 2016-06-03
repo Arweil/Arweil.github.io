@@ -4,7 +4,8 @@ var routing = ['$urlRouterProvider', '$stateProvider',
 
 	$stateProvider.state('AboutMe', {
 		url: '/AboutMe',
-		templateUrl: './views/AboutMe.html'
+		templateUrl: './views/AboutMe.html',
+		cache: true
 	});
 
 	$stateProvider.state('Education', {
