@@ -1,23 +1,25 @@
 var routing = ['$urlRouterProvider', '$stateProvider',
  function ($urlRouterProvider, $stateProvider) {
-	$urlRouterProvider.otherwise('home');
+	$urlRouterProvider.otherwise('AboutMe');
 
-	$stateProvider.state('home', {
-		url: '/home',
-		templateUrl: './views/home.html',
-		controller: 'homeCtrl'
+	$stateProvider.state('AboutMe', {
+		url: '/AboutMe',
+		templateUrl: './views/AboutMe.html'
 	});
 
-	$stateProvider.state('work', {
-		url: '/work',
-		templateUrl: './views/work.html',
-		controller: 'workCtrl'
+	$stateProvider.state('Education', {
+		url: '/Education',
+		templateUrl: './views/Education.html'
 	});
 
-	$stateProvider.state('life', {
-		url: '/life',
-		templateUrl: './views/life.html',
-		controller: 'lifeCtrl'
+	$stateProvider.state('WorkExpericence', {
+		url: '/WorkExpericence',
+		templateUrl: './views/WorkExpericence.html'
+	});
+
+	$stateProvider.state('Skills', {
+		url: '/Skills',
+		templateUrl: './views/Skills.html'
 	});
 }]
 

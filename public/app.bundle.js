@@ -2,10 +2,10 @@ webpackJsonp([0],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 
 	__webpack_require__(1);
@@ -24,9 +24,26 @@ webpackJsonp([0],[
 	// load css
 
 
+	app.directive('navList', function () {
+		return {
+			ristrict: 'A',
+			link: function link($scope, element, attr) {
+
+				$(element).find('a').on('click', function () {
+					var $that = $(this);
+					var $navs = $(element).find('a');
+
+					$navs.removeClass('active');
+					$that.addClass('active');
+				});
+			}
+		};
+	});
+
 	app.config(_routers2.default);
 
 	exports.default = app;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
 /* 1 */
@@ -441,7 +458,7 @@ webpackJsonp([0],[
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #333333;\n}\n.container {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background-color: white;\n}\n.personMenu {\n  padding: 0px;\n  background-color: #FAFAFA;\n}\n.personMenu .person {\n  text-align: center;\n  background-color: #F0F0F0;\n  padding-bottom: 40px;\n}\n.personMenu .person img {\n  margin-top: 80px;\n}\n.personMenu .person h2 {\n  font-weight: 700;\n  margin: 45px 0 0 0;\n}\n.personMenu .person h3 {\n  color: #636260;\n  font-weight: 700;\n  margin: 15px 0 0 0;\n}\n.personMenu .person h4 {\n  margin: 30px 0 0 0;\n}\n.personMenu .navlist ul {\n  margin-bottom: 0px;\n}\n.personMenu .navlist ul li {\n  font-size: 24px;\n  font-weight: 700;\n  background-color: #FAFAFA;\n  padding: 10px 30px;\n}\n.personMenu .navlist ul li .glyphicon {\n  top: 4px;\n  padding: 0 10px;\n}\n.personMenu .navlist ul li.list-group-item {\n  border-left: 0;\n  border-right: 0;\n}\n.personMenu .navlist ul li.list-group-item.active {\n  background-color: #337ab7;\n}\n.personMenu .navlist ul li.list-group-item:first-child {\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.personMenu .navlist ul li.list-group-item:last-child {\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n}\n.contactMe {\n  background-color: #FAFAFA;\n  padding: 10px 40px 100px 40px;\n}\n.contactMe h4 {\n  font-weight: 700;\n}\n.contactMe p {\n  font-size: 18px;\n  font-weight: 400;\n  margin: 0;\n}\n.contactMe ul {\n  padding: 0;\n  margin-top: 20px;\n}\n.contactMe ul li {\n  color: #666666;\n  font-size: 16px;\n  font-weight: 700;\n  list-style-type: none;\n}\n.content {\n  padding: 60px 30px 0 30px;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #333333;\n}\n.container {\n  margin-top: 20px;\n  margin-bottom: 20px;\n  background-color: white;\n}\n.personMenu {\n  padding: 0px;\n  background-color: #FAFAFA;\n}\n.personMenu .person {\n  text-align: center;\n  background-color: #F0F0F0;\n  padding-bottom: 40px;\n}\n.personMenu .person img {\n  margin-top: 80px;\n}\n.personMenu .person h2 {\n  font-weight: 700;\n  margin: 45px 0 0 0;\n}\n.personMenu .person h3 {\n  color: #636260;\n  font-weight: 700;\n  margin: 15px 0 0 0;\n}\n.personMenu .person h4 {\n  margin: 30px 0 0 0;\n}\n.personMenu .navlist div {\n  margin-bottom: 0px;\n}\n.personMenu .navlist div a {\n  font-size: 24px;\n  font-weight: 700;\n  background-color: #FAFAFA;\n  padding: 10px 30px;\n}\n.personMenu .navlist div a .glyphicon {\n  top: 4px;\n  padding: 0 10px;\n}\n.personMenu .navlist div a.list-group-item {\n  border-left: 0;\n  border-right: 0;\n}\n.personMenu .navlist div a.list-group-item.active {\n  background-color: #337ab7;\n}\n.personMenu .navlist div a.list-group-item:first-child {\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.personMenu .navlist div a.list-group-item:last-child {\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n}\n.contactMe {\n  background-color: #FAFAFA;\n  padding: 10px 40px 100px 40px;\n}\n.contactMe h4 {\n  font-weight: 700;\n}\n.contactMe p {\n  font-size: 18px;\n  font-weight: 400;\n  margin: 0;\n}\n.contactMe ul {\n  padding: 0;\n  margin-top: 20px;\n}\n.contactMe ul li {\n  color: #666666;\n  font-size: 16px;\n  font-weight: 700;\n  list-style-type: none;\n}\n.contactMe ul li i.glyphicon {\n  padding-right: 30px;\n}\n.content {\n  padding: 60px 30px 0 30px;\n}\n", ""]);
 
 	// exports
 
@@ -456,24 +473,26 @@ webpackJsonp([0],[
 		value: true
 	});
 	var routing = ['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
-		$urlRouterProvider.otherwise('home');
+		$urlRouterProvider.otherwise('AboutMe');
 
-		$stateProvider.state('home', {
-			url: '/home',
-			templateUrl: './views/home.html',
-			controller: 'homeCtrl'
+		$stateProvider.state('AboutMe', {
+			url: '/AboutMe',
+			templateUrl: './views/AboutMe.html'
 		});
 
-		$stateProvider.state('work', {
-			url: '/work',
-			templateUrl: './views/work.html',
-			controller: 'workCtrl'
+		$stateProvider.state('Education', {
+			url: '/Education',
+			templateUrl: './views/Education.html'
 		});
 
-		$stateProvider.state('life', {
-			url: '/life',
-			templateUrl: './views/life.html',
-			controller: 'lifeCtrl'
+		$stateProvider.state('WorkExpericence', {
+			url: '/WorkExpericence',
+			templateUrl: './views/WorkExpericence.html'
+		});
+
+		$stateProvider.state('Skills', {
+			url: '/Skills',
+			templateUrl: './views/Skills.html'
 		});
 	}];
 

@@ -15,30 +15,37 @@
 					<h4>Valencia, Spain</h4>
 				</div>
 				<div class="navlist">
-					<ul class="list-group">
-					   <li class="list-group-item active"><i class="glyphicon glyphicon-heart"></i> About Me</li>
-					   <li class="list-group-item"><i class="glyphicon glyphicon-heart"></i> Education</li>
-					   <li class="list-group-item"><i class="glyphicon glyphicon-heart"></i> Work Expericence</li>
-					   <li class="list-group-item"><i class="glyphicon glyphicon-heart"></i> Skills</li>
-					</ul>
+					<div class="list-group" nav-list>
+					   	<a ui-sref="AboutMe" class="list-group-item active">
+					   		<i class="glyphicon glyphicon-heart"></i>
+					   			About Me
+					   	</a>
+					   	<a ui-sref="Education" class="list-group-item">
+					   		<i class="glyphicon glyphicon-heart"></i>
+					   			Education
+					   	</a>
+					   	<a ui-sref="WorkExpericence" class="list-group-item">
+					   		<i class="glyphicon glyphicon-heart"></i>
+					   			Work Expericence
+					   	</a>
+					   	<a ui-sref="Skills" class="list-group-item">
+					   		<i class="glyphicon glyphicon-heart"></i>
+					   			Skills
+					   	</a>
+					</div>
 				</div>
 				<div class="contactMe">
 					<h4>Interested in working with me?</h4>
 					<p>Awesome!I'm available for full-time or freelance opportunitie.</p>
 					<p>Get in touch:</p>
 					<ul>
-						<li>1957185669@qq.com</li>
-						<li>XXX.com</li>
+						<li><i class="glyphicon glyphicon-heart"></i>1957185669@qq.com</li>
+						<li><i class="glyphicon glyphicon-heart"></i>XXX.com</li>
 					</ul>
 				</div>
 			</div>
 			<div class="col-md-8 content">
-				<h1>Education</h1>
-				<h2>Google University <small>2007 to always</small></h2>
-				<p>This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.</p>
-				<h1>Work Experience</h1>
-				<h2>Pickevent.com <small>2013 to present</small></h2>
-				<p>This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.This is content.</p>
+				<ui-view></ui-view>
 			</div>
 		</div>
 	</div>
