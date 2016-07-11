@@ -4,8 +4,8 @@ var webpack = require('webpack');
 module.exports = {
 	entry: {
 		app: './app.js',
-		jqPlugins: ['bootstrap', './public/js/timeliner.js'],
-		ng: ['angular', 'angular-ui-router', 'ng-infinite-scroll']
+		jq: ['jquery'],
+		bootstrap: ['bootstrap']
 	},
 	output: {
 		path: './public',
@@ -38,20 +38,14 @@ module.exports = {
 	},
 	plugins: [
 		// js代码压缩
-		/*new webpack.optimize.UglifyJsPlugin({
+		new webpack.optimize.UglifyJsPlugin({
 			compress: {
 				warnings: false
 			},
 			comments: false
-		}),*/
+		}),
 		// 分离css
 		//new extractTextPlugin("../css/style.css"),
-		// 分离模块
-		new webpack.optimize.CommonsChunkPlugin({
-			names: ['jqPlugins'],
-			filename: 'vendor.js',
-			minChunks: Infinity
-		}),
 		// 共享 $
 		new webpack.ProvidePlugin({
 			$: 'jquery',

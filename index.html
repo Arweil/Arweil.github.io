@@ -2,56 +2,159 @@
 <html lang="zh-cn" ng-app="app">
 <head>
 	<meta charset="UTF-8">
-	<title>LM的博客</title>
+	<title>个人简介</title>
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-4 personMenu">
-				<div class="person">
-					<img src="/public/img/tx.jpg" class="img-circle">
-					<h2>PRDRIGO ANGELIM</h1>
-					<h3>UI/UX Designer</h2>
-					<h4>Valencia, Spain</h4>
+		<div class="row head">
+			<div class="col-md-3 col-more-left ">
+				<img src="/public/img/tx.jpg" class="img-circle avatar">
+			</div>
+			<div class="col-md-9">
+				<h1 class="title resume">个人简介</h1>
+				<p class="content detail">姓名：卢 明</p>
+				<p class="content detail">期望职位：WEB前端工程师 </p>
+				<p class="content detail">工作年限：2014.07-至今</p>
+				<p class="content time">2016.07.11 中国·上海</p>
+			</div>
+		</div>
+		<div class="row main">
+			<div class="col-md-3 col-more-left ">
+				<div>
+					<h3 class="title">出生日期</h3>
+					<p class="content">1991.10.20</p>
 				</div>
-				<div class="navlist">
-					<div class="list-group" nav-list>
-					   	<a ui-sref="AboutMe" class="list-group-item active">
-					   		<i class="glyphicon glyphicon-heart"></i>
-					   			About Me
-					   	</a>
-					   	<a ui-sref="Education" class="list-group-item">
-					   		<i class="glyphicon glyphicon-heart"></i>
-					   			Education
-					   	</a>
-					   	<a ui-sref="WorkExpericence" class="list-group-item">
-					   		<i class="glyphicon glyphicon-heart"></i>
-					   			Work Expericence
-					   	</a>
-					   	<a ui-sref="Skills" class="list-group-item">
-					   		<i class="glyphicon glyphicon-heart"></i>
-					   			Skills
-					   	</a>
+				<div>
+					<h3 class="title">联系方式</h3>
+					<p class="content">15901695021</p>
+					<p class="content">1957185669@qq.com</p>
+				</div>
+				<div>
+					<h3 class="title">地址</h3>
+					<p class="content">上海·杨浦</p>
+				</div>
+				<div class="web">
+					<h3 class="title">个人页面</h3>
+					<p>
+						<a href="http://arweil.github.io" class="content">http://arweil.github.io</a>
+					</p>
+					<p>
+						<a href="http://arweil.github.io" class="content">http://arweil.github.io</a>
+					</p>
+				</div>
+				<div class="skill">
+					<h3 class="title">个人技能</h3>
+					<p class="content">HTML</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 70%;">
+						</div>
+					</div>
+					<p class="content">Css</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 50%;">
+						</div>
+					</div>
+					<p class="content">Javascript</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 60%;">
+						</div>
+					</div>
+					<p class="content">Bootstrap</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 70%;">
+						</div>
+					</div>
+					<p class="content">Jquery</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 60%;">
+						</div>
+					</div>
+					<p class="content">AngularJs</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 50%;">
+						</div>
+					</div>
+					<p class="content">ASP.NET</p>
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 	
+							style="width: 60%;">
+						</div>
 					</div>
 				</div>
-				<div class="contactMe">
-					<h4>Interested in working with me?</h4>
-					<p>Awesome!I'm available for full-time or freelance opportunitie.</p>
-					<p>Get in touch:</p>
-					<ul>
-						<li><i class="glyphicon glyphicon-heart"></i>1957185669@qq.com</li>
-						<li><i class="glyphicon glyphicon-heart"></i>XXX.com</li>
-					</ul>
-				</div>
 			</div>
-			<div class="col-md-8 content">
-				<ui-view></ui-view>
+			<div class="col-md-9">
+				<div>
+					<h3 class="title">
+						上海硕研信息科技发展有限公司<small> [2015.03-至今]</small>
+					</h3>
+					<p class="content">
+						<ul class="list-unstyled">
+							<li>职责：软件开发工程师，负责在线考试系统的项目。由于公司的需要，转为web前端工程师，负责公司App开发与web前端制作。</li>
+							<li>产品：
+								<ol>
+									<li>
+										<p>在线考试系统</p>
+										<p>项目说明：在线题库，学生选课后可进行相应的书籍查阅以及联系、考试等，包括教师的人员、题目、考场的管理。</p>
+										<p>个人负责：整套软件的前端和后台部分的开发。</p>
+										<p>技术要点：HTML5、Bootstrap、jQuery、ASP.NET、MSSQL</p>
+									</li>
+									<li>
+										<p>技能竞赛系统</p>
+										<p>项目说明：比赛用软件</p>
+										<p>个人负责：制作App，包含教师对班级、学生的管理、成绩的查看、学生在app上可做试卷练习，查看成绩。</p>
+										<p>技术要点：Ionic、AngularJs、Cordova、Android、Ios</p>
+									</li>
+								</ol>
+							</li>
+						</ul>
+					</p>
+				</div>
+				<div>
+					<h3 class="title">
+						厦门飞亿天下电子商务有限公司<small> [2014.07-2015.02]</small>
+					</h3>
+					<p class="content">
+						<ul class="list-unstyled">
+							<li>职责：软件开发工程师，负责公司官网建设、动软商城的二次开发、以及公司网站的前端编写。</li>
+							<li>产品：
+								<ol>
+									<li>
+										<p>二次开发动软商城</p>
+										<p>项目说明：该项目主要是对公司商品的展示，以及对商品的选购，通过用户在公司充值电子币来对商品进行购买，包括用户的注册管理部分，商品展示管理部分，商品属性管理部分，选购商品物流部分，电子币处理部分，商家注册管理部分，系统庞大。</p>
+										<p>个人负责：根据需求独立修改商城业务逻辑，样式布局，以及脚本</p>
+										<p>技术要点：HTML、Css、JavaScript、jQuery、ASP.NET、MSSQL</p>
+									</li>
+									<li>
+										<p>厦门飞亿天下电子商务有限公司官网</p>
+										<p>项目说明：对公司内容进行展示，包括公司的商品展示，对客户的培训部分，企业荣誉，企业文化，企业最新资讯等。</p>
+										<p>个人负责：整套软件</p>
+										<p>技术要点：HTML、Css、JavaScript、jQuery、ASP.NET、MSSQL</p>
+									</li>
+								</ol>
+							</li>
+						</ul>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="public/vendor.js"></script>
-	<script type="text/javascript" src="public/ng.bundle.js"></script>
 	<script type="text/javascript" src="public/app.bundle.js"></script>
+	<script type="text/javascript" src="public/jq.bundle.js"></script>
+	<script type="text/javascript" src="public/bootstrap.bundle.js"></script>
+	
 </body>
 </html>
