@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-//var extractTextPlugin = require('extract-text-webpack-plugin');
+var extractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -14,8 +14,8 @@ module.exports = {
 	module: {
 		loaders: [
 			//load css
-			//{ test: /\.(css|less)$/, loader: extractTextPlugin.extract('style-loader', 'css-loader', 'less-loader') },
-			{ test: /\.(css|less)$/, loader: 'style!css!less' },
+			{ test: /\.(css|less)$/, loader: extractTextPlugin.extract('style-loader', 'css-loader', 'less-loader') },
+			//{ test: /\.(css|less)$/, loader: 'style!css!less' },
 			//url loader & file loader
 			{ 
 				test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, 
@@ -45,7 +45,7 @@ module.exports = {
 			comments: false
 		}),
 		// 分离css
-		//new extractTextPlugin("../css/style.css"),
+		new extractTextPlugin("/public/css/style.css"),
 		// 共享 $
 		new webpack.ProvidePlugin({
 			$: 'jquery',
