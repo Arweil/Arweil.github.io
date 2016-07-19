@@ -5,4 +5,4 @@
 * 熟练使用SVN、GIT等常用版本管理工具；
 * 熟悉后台开发环境，熟练掌握C#、ASP.NET、MSSQL等后台技术，并能够开发网站；
 * 能够使用Ionic、Cordova开发跨平台APP；
-* 喜欢并了解ES6、RequireJs、NodeJS等前后端技术；
+* 喜欢并了解ES6、RequireJs、Vue、Reactjs、NodeJS等前后端技术；
