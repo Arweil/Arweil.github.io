@@ -1,5 +1,17 @@
 .border-opacity {
-  animation: border-opacity 5s infinite;
+  -webkit-animation: border-opacity 5s infinite;
+          animation: border-opacity 5s infinite;
+}
+@-webkit-keyframes border-opacity {
+  0% {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
 }
 @keyframes border-opacity {
   0% {
@@ -13,7 +25,16 @@
   }
 }
 .show-hi {
-  animation: show-hi 5s 1;
+  -webkit-animation: show-hi 5s 1;
+          animation: show-hi 5s 1;
+}
+@-webkit-keyframes show-hi {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes show-hi {
   0% {
@@ -24,7 +45,16 @@
   }
 }
 .show-line {
-  animation: show-line 3s 1;
+  -webkit-animation: show-line 3s 1;
+          animation: show-line 3s 1;
+}
+@-webkit-keyframes show-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
 }
 @keyframes show-line {
   0% {
@@ -35,7 +65,16 @@
   }
 }
 .show-about {
-  animation: show-about 1s 3s 1;
+  -webkit-animation: show-about 1s 3s 1;
+          animation: show-about 1s 3s 1;
+}
+@-webkit-keyframes show-about {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes show-about {
   0% {
@@ -46,7 +85,18 @@
   }
 }
 .show-name {
-  animation: show-name 1s 3s 1;
+  -webkit-animation: show-name 1s 3s 1;
+          animation: show-name 1s 3s 1;
+}
+@-webkit-keyframes show-name {
+  0% {
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 @keyframes show-name {
   0% {
