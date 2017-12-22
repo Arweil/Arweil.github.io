@@ -3,9 +3,9 @@
   "yourName": "LM", // 你的名字
   "sign": "Hello This is My Signature", //个性签名
   "addr": "上海 杨浦",
-  "Email": "luming369@hotmail.com",
+  "email": "luming369@hotmail.com",
   "company": "大润发技术部",
-  "Job": "web前端",
+  "job": "web前端",
   "git": "https://gitee.com/Arweil",
   "sina": "https://weibo.com/p/1005052371886237/home",
   "tagList": ["html", "css", "Javascript", "ES6", "Vue", "TypeScript", "Node", "Mongodb", "玩", "吃"], // 标签列表
