@@ -14,39 +14,5 @@
       "name": "Javascript",
       "percent": 60
     }
-  ],
-  "articleList": [
-    {
-      "title": "jwt的原理",
-      "desc": "JSON Web Token的原理，使用JWT完成客户端和服务端交互",
-      "time": "2017-12-20",
-      "tags": ["Node"],
-      "mdContentURL": "https://gitee.com/Arweil/Arweil/raw/master/doc/work/jwt%E7%9A%84%E5%8E%9F%E7%90%86/index.md"
-    },
-    {
-      "title": "工作中遇到的问题",
-      "desc": "总结一下工作中遇到的问题，以后要注意",
-      "time": "2017-12-10",
-      "tags": [
-        "Javascript"
-      ],
-      "mdContentURL": "https://gitee.com/Arweil/Arweil/raw/master/doc/work/%E5%B7%A5%E4%BD%9C%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.md"
-    },
-    {
-      "title": "略读源码，了解Vue的运行",
-      "desc": "了解Vue的运行原理",
-      "time": "2017-12-01",
-      "tags": [
-        "Javascript", "Vue"
-      ],
-      "mdContentURL": "https://gitee.com/Arweil/Arweil/raw/master/doc/work/%E7%95%A5%E8%AF%BB%E6%BA%90%E7%A0%81%EF%BC%8C%E4%BA%86%E8%A7%A3Vue%E7%9A%84%E8%BF%90%E8%A1%8C/index.md"
-    }
-  ],
-  "funList": [
-    {
-      "time": "",
-      "imgSrcList": [],
-      "mdContentURL": ""
-    }
   ]
 }
