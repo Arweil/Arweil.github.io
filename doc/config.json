@@ -1,0 +1,52 @@
+{
+  "siteName": "MyBlog",
+  "yourName": "LM", // 你的名字
+  "sign": "Hello This is My Signature", //个性签名
+  "addr": "上海 杨浦",
+  "Email": "luming369@hotmail.com",
+  "company": "大润发技术部",
+  "Job": "web前端",
+  "git": "https://gitee.com/Arweil",
+  "sina": "https://weibo.com/p/1005052371886237/home",
+  "tagList": ["html", "css", "Javascript", "ES6", "Vue", "TypeScript", "Node", "Mongodb", "玩", "吃"], // 标签列表
+  "skillList": [
+    {
+      "name": "Javascript",
+      "percent": 60 // 熟练程度
+    }
+  ],
+  "articleList": [ // 文章部分
+    {
+      "title": "jwt的原理", // 文章标题（markdown文件名）
+      "desc": "JSON Web Token的原理，使用JWT完成客户端和服务端交互", // 文章描述
+      "time": "2017-12-20", // 文章发布时间
+      "tags": ["Node"], // 标签
+      "mdContentURL": "" // 文章内容的markdown地址
+    },
+    {
+      "title": "工作中遇到的问题",
+      "desc": "总结一下工作中遇到的问题，以后要注意",
+      "time": "2017-12-10",
+      "tags": [
+        "Javascript"
+      ],
+      "mdContentURL": ""
+    },
+    {
+      "title": "略读源码，了解Vue的运行",
+      "desc": "了解Vue的运行原理",
+      "time": "2017-12-01",
+      "tags": [
+        "Javascript", "Vue"
+      ],
+      "mdContentURL": ""
+    }
+  ],
+  "funList": [ // 趣事部分
+    {
+      "time": "", // 时间
+      "imgSrcList": [], // 图片地址列表
+      "mdContentURL": "" // 内容markdown地址
+    }
+  ]
+}
