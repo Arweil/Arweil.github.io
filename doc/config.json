@@ -1,27 +1,27 @@
 {
   "siteName": "MyBlog",
-  "yourName": "LM", // 你的名字
-  "sign": "Hello This is My Signature", //个性签名
+  "yourName": "LM",
+  "sign": "Hello This is My Signature",
   "addr": "上海 杨浦",
   "email": "luming369@hotmail.com",
   "company": "大润发技术部",
   "job": "web前端",
   "git": "https://gitee.com/Arweil",
   "sina": "https://weibo.com/p/1005052371886237/home",
-  "tagList": ["html", "css", "Javascript", "ES6", "Vue", "TypeScript", "Node", "Mongodb", "玩", "吃"], // 标签列表
+  "tagList": ["html", "css", "Javascript", "ES6", "Vue", "TypeScript", "Node", "Mongodb", "玩", "吃"],
   "skillList": [
     {
       "name": "Javascript",
-      "percent": 60 // 熟练程度
+      "percent": 60
     }
   ],
-  "articleList": [ // 文章部分
+  "articleList": [
     {
-      "title": "jwt的原理", // 文章标题（markdown文件名）
-      "desc": "JSON Web Token的原理，使用JWT完成客户端和服务端交互", // 文章描述
-      "time": "2017-12-20", // 文章发布时间
-      "tags": ["Node"], // 标签
-      "mdContentURL": "https://gitee.com/Arweil/Arweil/raw/master/doc/work/jwt%E7%9A%84%E5%8E%9F%E7%90%86/index.md" // 文章内容的markdown地址
+      "title": "jwt的原理",
+      "desc": "JSON Web Token的原理，使用JWT完成客户端和服务端交互",
+      "time": "2017-12-20",
+      "tags": ["Node"],
+      "mdContentURL": "https://gitee.com/Arweil/Arweil/raw/master/doc/work/jwt%E7%9A%84%E5%8E%9F%E7%90%86/index.md"
     },
     {
       "title": "工作中遇到的问题",
@@ -42,11 +42,11 @@
       "mdContentURL": "https://gitee.com/Arweil/Arweil/raw/master/doc/work/%E7%95%A5%E8%AF%BB%E6%BA%90%E7%A0%81%EF%BC%8C%E4%BA%86%E8%A7%A3Vue%E7%9A%84%E8%BF%90%E8%A1%8C/index.md"
     }
   ],
-  "funList": [ // 趣事部分
+  "funList": [
     {
-      "time": "", // 时间
-      "imgSrcList": [], // 图片地址列表
-      "mdContentURL": "" // 内容markdown地址
+      "time": "",
+      "imgSrcList": [],
+      "mdContentURL": ""
     }
   ]
 }
