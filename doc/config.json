@@ -1,0 +1,17 @@
+{
+  "siteName": "MyBlog BETA",
+  "yourName": "LM",
+  "sign": "努力学习web前端",
+  "addr": "上海 杨浦",
+  "email": "luming369@hotmail.com",
+  "company": "大润发技术部",
+  "job": "web前端",
+  "git": "https://gitee.com/Arweil",
+  "sina": "https://weibo.com/p/1005052371886237/home",
+  "skillList": [
+    {
+      "name": "Javascript",
+      "percent": 60
+    }
+  ]
+}
